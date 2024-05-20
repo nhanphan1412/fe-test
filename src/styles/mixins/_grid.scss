@@ -1,0 +1,25 @@
+@mixin responsive-grid(
+  $name-md: null,
+  $columns-tablet: null,
+  $name-lg: null,
+  $columns-laptop: null,
+  $name-xl: null,
+  $columns-desktop: null,
+  $gap: null
+) {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: $gap;
+
+  @media (min-width: map-get($breakpoints, $name-md)) {
+    grid-template-columns: repeat($columns-tablet, minmax(0, 1fr));
+  }
+
+  @media (min-width: map-get($breakpoints, $name-lg)) {
+    grid-template-columns: repeat($columns-laptop, minmax(0, 1fr));
+  }
+
+  @media (min-width: map-get($breakpoints, $name-xl)) {
+    grid-template-columns: repeat($columns-desktop, minmax(0, 1fr));
+  }
+}

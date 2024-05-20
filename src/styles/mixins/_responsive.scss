@@ -1,0 +1,10 @@
+@mixin responsive($name) {
+  @if map-has-key($breakpoints, $name) {
+    $breakpoint-value: map-get($breakpoints, $name);
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}

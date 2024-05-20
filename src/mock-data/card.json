@@ -1,0 +1,42 @@
+[
+  {
+    "image": "/assets/images/portrait.png", 
+    "text": "Product name is quite long in some cases."
+  },
+  {
+    "image": "/assets/images/landscape.jpg", 
+    "text": "Product name is quite long in some cases."
+  },
+  {
+    "image": "/assets/images/portrait.png",  
+    "text": "Product name is quite long in some cases."
+  },
+  {
+    "image": "/assets/images/landscape.jpg",
+    "text": "Product name is quite long in some cases." 
+  },
+  {
+    "image": "/assets/images/portrait.png",
+    "text": "Product name is quite long in some cases."
+  },  
+  {
+    "image": "/assets/images/portrait.png", 
+    "text": "Product name is quite long in some cases."
+  },
+  {
+    "image": "/assets/images/landscape.jpg", 
+    "text": "Product name is quite long in some cases."
+  },
+  {
+    "image": "/assets/images/portrait.png",  
+    "text": "Product name is quite long in some cases."
+  },
+  {
+    "image": "/assets/images/landscape.jpg",
+    "text": "Product name is quite long in some cases." 
+  },
+  {
+    "image": "/assets/images/portrait.png",
+    "text": "Product name is quite long in some cases."
+  }
+]

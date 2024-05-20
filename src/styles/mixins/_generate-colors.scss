@@ -1,0 +1,9 @@
+@mixin generate-color-classes($map) {
+  @each $key, $val in $variants-color {
+    .text-#{"" + $key} {
+      color: #{$val};
+    }
+  }
+}
+
+@include generate-color-classes($variants-color);

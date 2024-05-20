@@ -1,0 +1,9 @@
+@mixin generate-font-weight-classes($map) {
+  @each $key, $val in $variants-font-weights {
+    .font-#{"" + $key} {
+      font-weight: $val;
+    }
+  }
+}
+
+@include generate-font-weight-classes($variants-font-sizes);

@@ -1,0 +1,9 @@
+@mixin generate-font-size-classes($map) {
+  @each $key, $val in $variants-font-sizes {
+    .text-#{"" + $key} {
+      @include font-size($val);
+    }
+  }
+}
+
+@include generate-font-size-classes($variants-font-sizes);

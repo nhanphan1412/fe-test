@@ -1,0 +1,13 @@
+@mixin button($button-color: $green) {
+  display: inline-block;
+  @include border-radius(4px);
+  @include transition(all, 0.3s);
+  @include border();
+  @include padding(8px);
+  color: $button-color;
+  cursor: pointer;
+  &:hover {
+    border-color: $black;
+    color: $black;
+  }
+}

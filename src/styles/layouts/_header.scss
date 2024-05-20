@@ -1,0 +1,12 @@
+.header {
+  @extend .flex;
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(space-between);
+  @include padding(16px);
+  background-color: $green;
+
+  @include responsive(sm) {
+    @include flex-direction(row);
+  }
+}

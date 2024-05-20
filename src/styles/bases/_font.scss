@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "TimesNewRoman";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../../public/assets/fonts/times-new-roman.eot"); /* IE9 Compat Modes */
+  src: url("../../../public/assets/fonts/times-new-roman.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../../public/assets/fonts/times-new-roman.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../../public/assets/fonts/times-new-roman.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../../../public/assets/fonts/times-new-roman.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../../public/assets/fonts/times-new-roman.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
+}

@@ -1,0 +1,9 @@
+@mixin generate-margin-left-classes($map) {
+  @each $key, $val in $variants-margin-left {
+    .ml-#{"" + $key} {
+      @include toRem(margin-left, $val);
+    }
+  }
+}
+
+@include generate-margin-left-classes($variants-margin-left);

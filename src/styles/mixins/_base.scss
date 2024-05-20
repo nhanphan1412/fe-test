@@ -1,0 +1,26 @@
+@mixin toRem($property: font-size, $value) {
+  #{$property}: calc($value / $font-size-base) + rem;
+}
+
+@mixin custom($property, $values...) {
+  $rem-values: ();
+
+  @each $value in $values {
+    $rem-value: calc($value / $font-size-base) + rem;
+    $rem-values: append($rem-values, $rem-value);
+  }
+
+  #{$property}: $rem-values;
+}
+
+@mixin font-size($value) {
+  @include toRem(font-size, $value);
+}
+
+@mixin padding($values...) {
+  @include custom(padding, $values...);
+}
+
+@mixin margin($value...) {
+  @include custom(margin, $values...);
+}

@@ -1,0 +1,13 @@
+@mixin border($width: 1px, $style: solid, $color: $white, $side: all) {
+  @if $side == all {
+    border: calc($width / $font-size-base) + rem $style $color;
+  } @else if $side == top {
+    border-top: calc($width / $font-size-base) + rem $style $color;
+  } @else if $side == right {
+    border-right: calc($width / $font-size-base) + rem $style $color;
+  } @else if $side == bottom {
+    border-bottom: calc($width / $font-size-base) + rem $style $color;
+  } @else if $side == left {
+    border-left: calc($width / $font-size-base) + rem $style $color;
+  }
+}

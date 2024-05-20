@@ -1,0 +1,9 @@
+@mixin generate-text-decoration-classes($map) {
+  @each $key, $val in $variants-text-decoration {
+    .text-decoration-#{"" + $key} {
+      text-decoration: #{$val};
+    }
+  }
+}
+
+@include generate-text-decoration-classes($variants-text-decoration);
